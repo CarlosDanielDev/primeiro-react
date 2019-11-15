@@ -25,7 +25,7 @@ Dentro da pasta inicialize o Packager:
 Instalando as dependências necessárias para criar um projeto **React** do zero:
 
 ```bash
- yarn add @babel-core @babel/preset-env @babel/preset-react webpack webpack-cli webpack-dev-server @babel/plugin-proposal-class-properties -D
+ yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli webpack-dev-server @babel/plugin-proposal-class-properties -D
 ```
 
 Instalando o ***Loaders***
