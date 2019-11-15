@@ -82,6 +82,7 @@ module.exports = {
     "@babel/preset-env",
     "@babel/preset-react"
   ],
+  ,
   plugins : ['@babel/plugin-proposal-class-properties']
 }
 ```
@@ -148,6 +149,9 @@ exatamente assim:
       path: path.resolve(__dirname, 'public'),
       filename: 'bundle.js'
     },
+    devServer: {
+      contentBase: path.resolve(__dirname, 'public')
+    },
     module: {
       rules: [
         {
@@ -207,6 +211,11 @@ seus devidos *loaders*, `exclude`, onde dizemos pro *webpack*
 o que não transpilar, e por fim `use`, onde informamos para o *webpack* o
 `loader` que nós vamos utilizar.
 
+## Dev Server
+
+A `key` `devServer`, informa a o path da pasta `public` onde ele encontra o 
+nosso `index.html`, possibilitando asssim o Live Reload.
+
 ## 7º passo
 
 Configurando os `scripts` da nossa aplicação
@@ -251,7 +260,13 @@ ex dentro do `package.json`:
   }
 }
 ```
+## 7.1ª
 
+execute no terminal:
+
+```bash
+yarn build
+```
 ## 8º Passo
 
 Vamos voltar um pouquinho antes de continuar, lemvbra daquela pasta `public` que
