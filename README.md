@@ -55,7 +55,7 @@ Agora instale o **React** e o **React-DOM** para poder construir sua aplicação
 Utilizando o **React**.
 
 ```bash
-yarn add react react-dom
+yarn add react react-dom prop-types
 ```
 
 ## 5º Passo
