@@ -93,8 +93,7 @@ module.exports = {
 > como por exemplo código *JSX*(a mistura de *Javascript* com *HTML*).
 
 > O `@babel/plugin-proposal-class-properties` permite que nós possamos
-> declara variáveis de `state` fora do método `constructor`, isso vai
-> ficar mais claro no tópico ***Hello React***.
+> declara variáveis de `state` fora do método `constructor`.
 
 ## 6º passo
 
