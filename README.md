@@ -2,7 +2,7 @@
 
 ## 1º Passo
 
-Crie uma pasta para que possa armaezar todo o código do projeto
+Crie uma pasta para que possa armazenar todo o código do projeto
 No ***Linux*** ou no ***MAC*** execute o comando:
 
 ```bash
@@ -33,14 +33,14 @@ Instalando o ***Loaders***
 ```bash
 yarn add babel-loader css-loader file-loader -D
 ```
-> `babel-laoder` é o responśavel por transpilar o código para que todos 
+> `babel-loader` é o responsável por transpilar o código para que todos 
 > os navegadores entendam.
 
-> `css-loader` é responsavel por carregar todos os arquivos de css.
+> `css-loader` é responsável por carregar todos os arquivos de css.
 
 > `file-loader` é responsável por carregar arquivos (.png, .jpg ...etc)
 
-> `style-loader` é responsável por corregar os arquivos de estilo(css) dentro
+> `style-loader` é responsável por carregar os arquivos de estilo(css) dentro
 > de arquivos *javascript*
 
 > Todos esses loaders serão utilizados na configuração do *webpack* que
@@ -62,19 +62,19 @@ yarn add react react-dom prop-types
 
 ### Configurando o ***Babel***:
 
-> O ***Babel*** permite que a gente utilize a nova *sintaxe* do *Javascript*
-> em todos os navegadores sem sofrer problemas de imcompatibilidade com
+> O ***Babel*** nos permite utilizar a nova *sintaxe* do *Javascript*
+> em todos os navegadores sem sofrer problemas de incompatibilidade com
 > essa *sintaxe* nova que utilizamos quando estamos criando aplicações
 > com o **React**.
 
 Na raiz do seu *projeto* crie um arquivo chamado *babel.config.js* ou rode 
-o comando à seguir no terminal(caso você use ***linux***):
+o comando a seguir no terminal(caso você use ***linux***):
 
 ```bash
  touch babel.config.js
 ```
 
-Agora vamos editar esse arquivo que acabamos de criar, dexe ele da seguinte maneira:
+Agora vamos editar esse arquivo que acabamos de criar, deixe ele da seguinte maneira:
 
 ```js
 module.exports = {
@@ -85,14 +85,14 @@ module.exports = {
   plugins : ['@babel/plugin-proposal-class-properties']
 }
 ```
-> O `@babel/preset-env` é responsável por, digamos assim traduzir a nova *sintaxe*
+> O `@babel/preset-env` é responsável por, digamos assim, traduzir a nova *sintaxe*
 > do *Javascript* pro navegador, features como `import`, `export`, as 
 > *arrow-functions*: `()=>{}` e etc, já o `@babel/preset-react`, é responsável
 > por fazer com que o navegador entenda as coisas do **React** propriamente dito
-> como por exemplo código *JSX*(a mistura de *Javascript* com *HTML*).
+> como, por exemplo código *JSX*(a mistura de *Javascript* com *HTML*).
 
-> O `@babel/plugin-proposal-class-properties` permite que nós possamos
-> declara variáveis de `state` fora do método `constructor`.
+> O `@babel/plugin-proposal-class-properties` permite que possamos
+> declarar variáveis de `state` fora do método `constructor`.
 
 ## 6º passo
 
@@ -103,7 +103,7 @@ ele fica escutando tudo o que fazemos no nosso código, e também fica com a
 responsabilidade de transpilar o código e mover eles pra pasta correta
 para que nossa aplicação funcione belezinha.
 
-Antes de tudo é importante configuramos as estrutura do projeto.
+Antes de tudo é importante configuramos a estrutura do projeto.
 
 Partindo do pressuposto que todo nosso código deva ficar dentro de uma pasta 
 chamada `src`(*source*), na raiz  do projeto criamos uma pasta chamada `src`, 
@@ -137,8 +137,7 @@ Caso esteja no linux é só rodar:
  touch webpack.config.js
 ```
 
-Edite esse arquivo que acabamos de criar, e é importante que você deixo-o
-exatamente assim:
+Edite esse arquivo que acabamos de criar, e é importante deixar exatamente assim:
 
 ```js
   const path = require('path');
@@ -182,8 +181,8 @@ Vamos por partes:
 
 ### output
   #### path
-> *output/path* é onde informamos o caminho para a pasta que a gente configurou
-> onde vai ficar o código transpilado(o codigo que todos os navegadores entendam).
+> *output/path* é onde informamos o caminho para a pasta que configuramos,
+> lá vai ficar o código transpilado(o código para que todos os navegadores entendam).
 
 ### output
   #### filename
@@ -205,27 +204,27 @@ chamada `module`, essa `key` é um objeto que contem várias configurações,
 uma delas é a `key` que chamamos de `rules`, essa `key` contem todas as 
 instruções para o *webpack* fazer tudo direitinho, dentro de `rules`, temos um
 `array` de objetos, dentro de cada objeto temos mais algumas `keys`, sendo elas
-`test` que recebe uma expressão regular que consegue pegar todos os arquivos e utlizar 
+`test` que recebe uma expressão regular que consegue pegar todos os arquivos e utilizar 
 seus devidos *loaders*, `exclude`, onde dizemos pro *webpack*
 o que não transpilar, e por fim `use`, onde informamos para o *webpack* o
 `loader` que nós vamos utilizar.
 
 ## Dev Server
 
-A `key` `devServer`, informa a o path da pasta `public` onde ele encontra o 
+A `key` `devServer`, informa o path da pasta `public` onde ele encontra o 
 nosso `index.html`, possibilitando asssim o Live Reload.
 
 ## 7º passo
 
 Configurando os `scripts` da nossa aplicação
 
-Dentro do seu `package.json`, logo após a `key` `licence`, crie uma `key`
+Dentro do seu `package.json`, logo após a `key` `license`, crie uma `key`
 com o nome `scripts`, essa key deve ser um objeto.
 
 Agora vamos criar o script de `build` da nossa aplicação, o que vai fazer
 toda a configuração que a gente fez funcionar.
 
-E agora criamos tambem o script de `dev` que serve para *subir* o servidor,
+E agora criamos também o script de `dev` que serve para *subir* o servidor,
 e fazer a mágica acontecer.
 
 ex dentro do `package.json`:
@@ -261,23 +260,23 @@ ex dentro do `package.json`:
 ```
 ## 7.1ª
 
-execute no terminal:
+Execute no terminal:
 
 ```bash
 yarn build
 ```
 ## 8º Passo
 
-Vamos voltar um pouquinho antes de continuar, lemvbra daquela pasta `public` que
-nós criamos ? dentro dela vamos criar um arquivo `index.html` onde vamos instanciar
-o arquivo `bundle.js` que nós configuramos lá no `webpack`.
+Vamos voltar um pouquinho antes de continuar, lembra daquela pasta `public` que
+nós criamos? Dentro dela vamos criar um arquivo `index.html` onde vamos instanciar
+o arquivo `bundle.js` que configuramos lá no `webpack`.
 
 Na raiz do projeto rode:
 ```bash
 touch public/index.html
 ```
 
-edite o arquivo `index.html` e deixe-o assim:
+Edite o arquivo `index.html` e deixe-o assim:
 
 ```html
 <!DOCTYPE html>
@@ -332,17 +331,17 @@ render(<App />, document.getElementById('App'));
 
 Certo, o que fizemos aqui ?
 
-1. Importamos o `React` de dentro doa lib `react`.
+1. Importamos o `React` de dentro da lib `react`.
 
-2. Importamos o método `render` de dento da lib `react-dom`.
+2. Importamos o método `render` de dentro da lib `react-dom`.
 
-3. Importamos noss `App.js`
+3. Importamos nosso `App.js`
 
 4. Usamos a função `render` para renderizar o nosso arquivo `App.js` dentro da div que nós criamos naquele arquivo `index.html`.
 
 Agora vamos para o arquivo `App.js`
 
-deixe o arquivo `App.js` assim:
+Deixe o arquivo `App.js` assim:
 
 ```jsx
 
