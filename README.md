@@ -31,7 +31,7 @@ Instalando as dependências necessárias para criar um projeto **React** do zero
 Instalando o ***Loaders***
 
 ```bash
-yarn add babel-loader css-loader file-loader -D
+yarn add babel-loader style-loader css-loader file-loader -D
 ```
 > `babel-loader` é o responsável por transpilar o código para que todos 
 > os navegadores entendam.
