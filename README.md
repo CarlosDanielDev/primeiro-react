@@ -98,7 +98,7 @@ module.exports = {
 
 ### Configurando o ***Webpack***
 
-O webpack fica com a responsabilidade o *live-reload*, então basicamente
+O webpack fica com a responsabilidade de *live-reload*, então basicamente
 ele fica escutando tudo o que fazemos no nosso código, e também fica com a 
 responsabilidade de transpilar o código e mover eles pra pasta correta
 para que nossa aplicação funcione belezinha.
