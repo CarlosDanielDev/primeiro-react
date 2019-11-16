@@ -92,8 +92,37 @@ module.exports = {
 > como, por exemplo código *JSX*(a mistura de *Javascript* com *HTML*).
 
 > O `@babel/plugin-proposal-class-properties` permite que possamos
-> declarar variáveis de `state` fora do método `constructor`.
+> declarar variáveis de `state` fora do método `constructor`, sem
+> plugin teriamos que escrever algo mais o menos assim:.
 
+```jsx
+import React, {Component} from 'react';
+
+export default class Teste extends Component{
+  constructor(){
+    this.state = {
+      // algum state
+    }
+  }
+  render(){
+    return <h1>Teste</h1>
+  }
+}
+```
+> Mas com esse plugin podemos simplesmente escrever assim:
+
+```jsx
+import React, {Component} from 'react';
+
+export default class Teste extends Component{
+  state = {
+    // algum state
+  }
+  render(){
+    return <h1>Teste</h1>
+  }
+}
+```
 ## 6º passo
 
 ### Configurando o ***Webpack***
