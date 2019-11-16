@@ -258,7 +258,7 @@ ex dentro do `package.json`:
   }
 }
 ```
-## 7.1ª
+## 7.1
 
 Execute no terminal:
 
