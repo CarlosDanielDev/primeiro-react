@@ -344,6 +344,11 @@ Agora abra seu editor de código favorito e #boraCodar
 Agora crie um arquivo chamado `App.js` dentro da pasta `src`, não precisa fazer
 nada com ele agora.
 
+Execute no terminal :
+```bash
+touch src/App.js
+```
+
 Agora dentro da pasta `src` tem um arquivo chamado `index.js`, se você seguiu todos
 os passos até aqui ele deve estar em branco, vamos editar ele agora, deixe-o
 exatamente assim: 
