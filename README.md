@@ -1,5 +1,5 @@
 # Configurando um projeto React do 0.
-Olá, me chamo Carlos Daniel, minha intenção com esse posta é explicar de uma vez por todas como configurar um projeto em React totalmente do zero, é necessário que você tenha familiaridade com o  [Terminal](https://pt.wikipedia.org/wiki/Terminal_(inform%C3%A1tica)) e com algumas ferramentas como [yarn](https://yarnpkg.com/pt-BR/) ou [npm](https://www.npmjs.com/).
+Olá, me chamo Carlos Daniel, minha intenção com esse post é explicar de uma vez por todas como configurar um projeto em React totalmente do zero, é necessário que você tenha familiaridade com o  [Terminal](https://pt.wikipedia.org/wiki/Terminal_(inform%C3%A1tica)) e com algumas ferramentas como [yarn](https://yarnpkg.com/pt-BR/) ou [npm](https://www.npmjs.com/).
 ## 1º Passo
 
 Crie uma pasta para que possa armazenar todo o código do projeto
