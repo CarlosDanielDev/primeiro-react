@@ -213,7 +213,6 @@ Vamos por partes:
 > *output/path* é onde informamos o caminho para a pasta que configuramos,
 > lá vai ficar o código transpilado(o código para que todos os navegadores entendam).
 
-### output
   #### filename
 > *output/filename* é onde informamos como vai se chamar o arquivo onde vai
 > ficar todo o código transpilado
